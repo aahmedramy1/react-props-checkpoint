@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function Profile({fullName, bio, profession, children}) {
 
-
+    const styleObject = {width: "30%", textAlign: "center"};
 
     
     const handleClick = (e) => {
@@ -14,7 +14,7 @@ function Profile({fullName, bio, profession, children}) {
 
     return(
         <div className = "container d-flex justify-content-center" >
-            <div className="card" style = {{width: "30%", textAlign: "center"}}>
+            <div className="card" style = {styleObject}>
                 {children}
                 <div className="card-body">
                     <h5 className="card-title">{fullName}</h5>
